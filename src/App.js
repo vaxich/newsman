@@ -12,14 +12,13 @@ import OneNews from './components/oneNews/oneNews';
 
 const useFetch = () => {
     const [data, updateDate] = useState(null);
-    const requestUrl = 'http://newsapi.org/v2/top-headlines?' +
-        'country=us&' +
-        'apiKey=fa4e0b2181f14097bce7d262764256d7';
+    const requestUrl = 'http://api.mediastack.com/v1/news?access_key=534bb5d4e4f531757c0bc16ef6f323d7';
 
     useEffect(() => {
         const fetchData = async () => {
             const response = await axios.get(requestUrl);
-            updateDate(response.data.articles);
+            updateDate(response.data.data);
+
         }
         fetchData();
     }, []);

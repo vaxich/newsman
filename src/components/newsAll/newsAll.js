@@ -11,6 +11,7 @@ const NewsAll = props => {
             return index < props.all;
 
         }).map(item => {
+
             return (
 
                 <div className={style.NewsAll__block} onClick={() => {
@@ -25,8 +26,8 @@ const NewsAll = props => {
                         </div>
 
                         <div className={style.NewsAll__block__bottom}>
-                            <p className={style.NewsAll__author}> {item.source.name} </p>
-                            <p className={style.NewsAll__published}>{item.publishedAt.substr(0, 10)}  </p>
+                            <p className={style.NewsAll__author}> {item.author} </p>
+                            <p className={style.NewsAll__published}>{item.published_at.substr(0, 10)}  </p>
                         </div>
 
 

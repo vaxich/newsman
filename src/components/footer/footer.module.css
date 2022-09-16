@@ -1,0 +1,7 @@
+/*@import '../fonts/fonts.css';*/
+
+
+.footerMain{
+    display: flex;
+    justify-content: space-between;
+}

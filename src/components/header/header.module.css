@@ -1,0 +1,42 @@
+/*@import '../fonts/fonts.css';*/
+
+.header_main {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 35px;
+    padding-bottom: 95px;
+    
+}
+
+.headerLeft {
+    margin-top: 12px;
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #333D51;
+}
+
+.headerRight {
+    min-width: 20%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    list-style-type: none;
+
+}
+li {
+    padding-left: 10px;
+}
+a {
+    text-decoration: none; 
+    font-size: 18px;
+    line-height: 22px;
+    color: #333D51;
+}
+a:hover {
+    text-decoration: none;
+    color: blue;
+    size: 55px;
+}
